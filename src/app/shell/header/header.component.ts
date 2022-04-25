@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   openCloseSidebar(){
 
     this.sidebarStatus.emit(!this.sidebarOpenClose)
+    this.sidebarOpenClose = !this.sidebarOpenClose;
   }
 
 }
