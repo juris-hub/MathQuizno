@@ -1,5 +1,9 @@
-<app-header (sidebarStatus)="onHeaderClick($event)"></app-header>
+<div class="header">
+  <app-header (sidebarStatus)="onHeaderClick($event)"></app-header>
+</div>
 <div class="content">
-  <app-sidebar [sidebarStatus]="sidebarStatus"> </app-sidebar>
+  <div class="sidebar">
+    <app-sidebar [sidebarStatus]="sidebarStatus"> </app-sidebar>
+  </div>
   <router-outlet></router-outlet>
 </div>
