@@ -5,6 +5,7 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShellModule } from './shell/shell.module';
+import { MathCurriculumModule } from './math-curriculum/math-curriculum.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { ShellModule } from './shell/shell.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ShellModule,
+    MathCurriculumModule,
 
   ],
   providers: [MessageService, ConfirmationService],
