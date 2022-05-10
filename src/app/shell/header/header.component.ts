@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  sidebarOpenClose = false;
+  showSidebar = false;
   @Output() sidebarStatus = new EventEmitter<boolean>();
 
   constructor() { }
@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   openCloseSidebar(){
-    this.sidebarStatus.emit(!this.sidebarOpenClose)
-    this.sidebarOpenClose = !this.sidebarOpenClose;
+    this.sidebarStatus.emit(!this.showSidebar)
+    this.showSidebar = !this.showSidebar;
   }
 
 }

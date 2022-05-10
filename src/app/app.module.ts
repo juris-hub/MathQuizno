@@ -4,8 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MathCurriculumModule } from './modules/math-curriculum/math-curriculum.module';
 import { ShellModule } from './shell/shell.module';
-import { MathCurriculumModule } from './math-curriculum/math-curriculum.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,7 @@ import { MathCurriculumModule } from './math-curriculum/math-curriculum.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ShellModule,
-    MathCurriculumModule,
+    MathCurriculumModule
 
   ],
   providers: [MessageService, ConfirmationService],
